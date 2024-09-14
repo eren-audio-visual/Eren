@@ -3,7 +3,7 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
+  --white-color:                  #c8c8c8;
   --primary-color:                #1f2d3e;
   --secondary-color:              #007f17;
   --section-bg-color:             #b78752;
@@ -37,27 +37,19 @@
   --font-weight-bold:             700;
 }
 
-.musicplayer{ 
-     position:fixed; 
-    z-index: 1;
-width: 95%;
-    height: auto;
-      background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-      transform: translateX(28px) translateY(-300px);
+#musicplayer{ 
+    z-index: 99;
+
 
 }
 
 
 
-
-
-body {
+body,html{
   background-color: #ededed;
-  font-family: var(--body-font-family);
-overflow-x: hidden;   
-
+  font-family: var(--body-font-family);   
+margin-top: -9%;
+      overflow-x: hidden;  
 }
 
 audio::-webkit-media-controls-timeline,
@@ -73,7 +65,9 @@ video::-webkit-media-controls {
     display: none;
 }
 
-
+.simp-album.simp-hide {
+  display: none;
+}
 
 #text1{
 text-shadow: 2px 2px 2px #000000;
@@ -93,7 +87,7 @@ border-radius: 148px;
 padding: 1px;
 transform: translateX(29px) translateY(-562px);
     margin-bottom: 40px;
-    margin-top: 
+    margin-top: ;
   position: relative;
 scale: 100%;
 
@@ -108,17 +102,18 @@ transform: translateX(-12px) translateY(43px);
 max-width: 100%;
 height: auto;
 transform: translateX(-20px) translateY(-519px);
-    opacity: 75%;   
+    opacity: 70%;   
     scale: 100%;
+
 }
 
 .video-eternal {
-max-width: 100%;
-    margin-top: -1%;
+  margin-top: -1%;
     height: auto;
       background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+    
 }
 
 .video-umbra{
@@ -140,34 +135,269 @@ max-width: 100%;
 }
 
 .contact-margin{
-    
-    transform: scaleY(140%);
-margin-bottom: -846px;
+ transform: translateX(1px) translateY(-159px) scaleY(142%);
+    z-index: 8;
+position: relative;
 
     
 }
 
-.card-pos{
-    
- transform: translateX(-25px) translateY(537px);   
-  scale: 90%;  
-  margin-bottom: 393px;  
- margin-top: -31%;       
+.cards {
+  margin: 0 auto;
+  max-width: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0.5rem;
+
+       transform: translateX(-5px) translateY(844px);
+    scale: 90%;
+  position: absolute;
+  z-index: 2;
 }
+
+
+
 
 #three-container{
-    transform: translateX(4px) translateY(93px);   
-    scale: 223%;
-max-width: 100%;
     margin-top: -1%;
     height: auto;
       background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    
-    
+    scale: 215%;
+    position: relative;
+      z-index: 1;  
+
+      transform: translateX(-7px) translateY(66px) scaleY(85%); 
 }
 
+
+
+
+@media {  
+    .erenprofile{
+transform: translateX(559px) translateY(-1502px); 
+        scale: 52%;
+ 
+              
+    }
+    .box1{
+transform: translateX(-352px) translateY(-568px); 
+margin-bottom: -9px;   
+     
+
+        scale: 84%;
+    }
+    .musicplayer{
+        
+        transform: translateX(8px) translateY(-641px) ; 
+         
+    }
+
+
+  .video-eternal{
+    
+         transform: translateX(-719px) translateY(1px); 
+  }
+  #three-container{
+    margin-bottom: 154%;
+  }
+}
+
+
+
+@media (min-width: 576px) {  
+    .erenprofile{
+transform: translateX(1px) translateY(-1024px); 
+        scale: 62%;
+margin-top: -105px;   
+              
+    }
+    .box1{
+transform: translateX(-7px) translateY(-842px) scaleX(125%) scaley(111%);
+width: 198%;
+        max-width: 102%;
+        scale: 85%;
+margin-bottom: -377px;
+    }
+
+   .video-eternal{
+    margin-top: -0.6%;
+         transform: translateX(-622px) translateY(1px); 
+  }
+    .cards{
+
+       transform: translateX(-11px) translateY(929px); 
+  }
+  #three-container{
+    margin-bottom: 126%;
+  }
+}
+   
+
+
+@media (min-width: 768px) {  
+    .erenprofile{
+transform: translateX(-19px) translateY(-1336px) scaleX(90%); 
+        scale: 52%;
+margin-top: -105px;   
+              
+    }
+    .box1{
+transform: translateX(-8px) translateY(-935px); 
+margin-bottom: -371px;  
+        scale: 90%;
+                max-width: 103%;
+    }
+    
+
+       .video-eternal{
+    
+         transform: translateX(-543px) translateY(1px); 
+  }
+  #three-container{
+    margin-bottom: 45%;
+  }
+}
+   
+
+
+@media (min-width: 992px) {  
+    .erenprofile{
+transform: translateX(-12px) translateY(-458px); 
+        scale: 100%;
+margin-top: -105px;   
+              
+    }
+    .box1{
+transform: translateX(0px) translateY(-807px); 
+margin-bottom: -270px;                   
+    }
+         .video-eternal{
+    margin-top: -0.3%;
+         transform: translateX(-463px) translateY(1px); 
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {  
+    .erenprofile{
+transform: translateX(-25px) translateY(-633px); 
+        scale: 80%;
+margin-top: -105px;   
+              
+    }
+    .box1{
+transform: translateX(-25px) translateY(-719px); 
+margin-bottom: -119px;  
+
+    }
+           .video-eternal{
+        margin-top: -0.9%;
+         transform: translateX(-30px) translateY(7px); 
+  }
+}
+
+   
+
+
+@media (min-width: 1400px) {  
+    .erenprofile{
+transform: translateX(-129px) translateY(-633px); 
+        scale: 80%;
+margin-top: -105px;   
+              
+    }
+    .box1{
+transform: translateX(-108px) translateY(-706px); 
+margin-bottom: -51px;                   
+    }
+
+    
+    .musicplayer{
+        
+         transform: translateX(42px) translateY(-300px);
+    }
+            .video-eternal{
+    
+         transform: translateX(-25px) translateY(15px); 
+  }
+              .video-umbra{
+    margin-bottom: 2%;
+         transform: translateX(-25px) translateY(40px); 
+  }
+  .cards{
+      margin: 12%;
+
+       transform: translateX(-89px) translateY(638px); 
+  }
+
+}
+
+
+   
+
+
+
+
+
+
+
+
+body {
+  margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+}
+
+body::before {
+  content: "XS";
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+.box {
+  background-color: lightblue;
+  border: 1px solid blue;
+  min-height: 50px;
+  font-size: 2rem;
+}
+/* Bootstrap size graphic  */
+@media (min-width: 576px) {
+  body::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  body::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  body::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1200px) {
+  body::before {
+    content: "XL";
+  }
+}
+
+@media (min-width: 1400px) {
+  body::before {
+    content: "XXL";
+  }
+}
 
 
 
@@ -185,15 +415,6 @@ max-width: 100%;
 
 body {
   background-color: #555;
-}
-
-.content-wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0.5rem;
 }
 
 .news-card {
@@ -336,180 +557,6 @@ color: #e1e1e1;
 
 
 
-
-@media {  
-    .erenprofile{
-transform: translateX(462px) translateY(-1036px); 
-        scale: 60%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(-327px) translateY(-547px); 
-margin-bottom: -2px;   
-        scale: 84%;
-    }
-
-}
-
-
-@media (min-width: 576px) {  
-    .erenprofile{
-transform: translateX(1px) translateY(-713px); 
-        scale: 80%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(-51px) translateY(-729px) scaleX(125%) scaley(111%);
-width: 198%;
-        max-width: 120%;
-        scale: 85%;
-margin-bottom: -340px;
-    }
-
-
-}
-   
-
-
-@media (min-width: 768px) {  
-    .erenprofile{
-transform: translateX(16px) translateY(-1041px) scaleX(90%); 
-        scale: 60%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(-3px) translateY(-809px); 
-margin-bottom: -346px;  
-        scale: 90%;
-                max-width: 103%;
-    }
-    
-    #video-eternal{
-        max-width: 731%;  
-    }
-    
-
-}
-   
-
-
-@media (min-width: 992px) {  
-    .erenprofile{
-transform: translateX(-12px) translateY(-322px); 
-        scale: 100%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(0px) translateY(-636px); 
-margin-bottom: -130px;                   
-    }
-}
-.video-eternal{
-     max-width: 173%;
-    transform: translateX(-20px) translateY(1px); 
-    
-}
-
-
-@media (min-width: 1200px) {  
-    .erenprofile{
-transform: translateX(-52px) translateY(-511px); 
-        scale: 80%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(15px) translateY(-583px); 
-margin-bottom: -50px;  
-
-    }
-}
-   
-
-
-@media (min-width: 1400px) {  
-    .erenprofile{
-transform: translateX(-187px) translateY(-499px); 
-        scale: 80%;
-margin-top: -105px;   
-              
-    }
-    .box1{
-transform: translateX(-73px) translateY(-541px); 
-margin-bottom: 42px;                   
-    }
-    
-    .musicplayer{
-        
-         transform: translateX(42px) translateY(-300px);
-    }
-}
-   
-
-
-
-
-
-
-
-
-body {
-  margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
-}
-
-body::before {
-  content: "XS";
-  color: red;
-  font-size: 2rem;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-  background-color: lightblue;
-  border: 1px solid blue;
-  min-height: 50px;
-  font-size: 2rem;
-}
-/* Bootstrap size graphic  */
-@media (min-width: 576px) {
-  body::before {
-    content: "SM";
-  }
-}
-
-@media (min-width: 768px) {
-  body::before {
-    content: "MD";
-  }
-}
-
-@media (min-width: 992px) {
-  body::before {
-    content: "LG";
-  }
-}
-
-@media (min-width: 1200px) {
-  body::before {
-    content: "XL";
-  }
-}
-
-@media (min-width: 1400px) {
-  body::before {
-    content: "XXL";
-  }
-}
-
-
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -600,7 +647,7 @@ strong {
 .section-bg {
   background-color: var(--section-bg-color);
 }
-
+/*
 .section-overlay {
   background-color: var(--dark-color);
   position: absolute;
@@ -612,7 +659,7 @@ strong {
   height: 35%;
   opacity: 0.81;
 }
-
+*/
 .section-overlay + .container {
   position: relative;
   z-index: 22;
@@ -1128,7 +1175,7 @@ strong {
 .team-block-info {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
   position: absolute;
-  z-index: 2;
+  z-index: 2;fo
   top: 0;
   right: 0;
   bottom: 0;
@@ -1142,168 +1189,17 @@ strong {
   bottom: 0;
 }
 
-
-/*---------------------------------------
-  OUR MENU              
------------------------------------------*/
 .portfolio-section {
   background-image: url('../images/Tessellation%20shop%20banner_upscale.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-margin-top: 55px;
-
-}
-
-.menu-block-wrap {
-  background: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  padding: 45px;
-}
-
-.menu-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.menu-block h6 {
-  color: var(--white-color);
-}
-
-.menu-block small {
-  color: rgba(255, 255, 255, 0.35);
-}
-
-.menu-block strong {
-  color: var(--secondary-color);
-}
-
-.menu-block-image {
-  border-radius: 100%;
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  cursor: pointer;
-}
-
-.badge {
-  background-color: var(--primary-color);
-  font-size: 12px;
-  position: relative;
-  bottom: 4px;
-  padding-bottom: 6px;
-}
-
-.badge::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -5px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid var(--primary-color);
-}
-
-
-/*---------------------------------------
-  REVIEWS              
------------------------------------------*/
-.reviews-section {
-  background-color: #7c5c52;
-}
-
-.reviews-block {
-  background-color: var(--section-bg-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.reviews-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.reviews-block-image-wrap {
-  background-image: url('../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-
-.reviews-block-image {
-  border-radius: var(--border-radius-large);
-  width: 65px;
-  height: 65px;
-  object-fit: cover;
-  margin-right: 10px;
-}
-
-.reviews-block-info {
-  padding: 20px 30px;
-}
-
-.reviews-block-info p {
-  font-size: var(--btn-font-size);
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.reviews-group i {
-  color: var(--white-color);
-}
-
-
-/*---------------------------------------
-  BOOKING SECTION              
------------------------------------------*/
-.booking-section {
-background-image: url('../images/Tessellation%20shop%20banner_upscale.png');
-  background-repeat: no-repeat;
+    background-position: top;
+  margin-top: -1%;
+    height: auto;
+      background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
     
-}
 
-.booking-form-wrap {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-  margin-top: 100px;
 }
-
-.booking-form {
-  padding: 55px 65px;
-}
-
-.booking-form-image-wrap {
-  position: relative;
-  height: 100%;
-}
-
-.booking-form-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.booking-form-text span {
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-}
-
-.reservation-page .custom-border-btn {
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.reservation-page .custom-border-btn:hover {
-  border-color: transparent;
-}
-
 
 /*---------------------------------------
   CONTACT               
@@ -1313,56 +1209,17 @@ background-image: url('../images/Tessellation%20shop%20banner_upscale.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform: translateX(0px) translateY(59px); 
+  transform: translateX(0px) translateY(3px); 
     margin: -16px;
-  
-    
-    
-
+  margin-bottom: -5%;
 }
 
-.google-map {
-  border-radius: var(--border-radius-medium);
-  filter: grayscale(6);
-}
 
-.contact-block-wrap {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-medium);
-  padding: 0;
-  min-height: 200px;
-}
 
-.contact-block {
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-medium);
-  transform: rotate(8deg);
-  height: 100%;
-  padding: 20px 40px;
-}
 
-.contact-block h6 {
-  transform: rotate(-8deg);
-}
 
-.contact-block .custom-icon {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-large);
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  position: relative;
-}
 
-.contact-block strong {
-  display: block;
-  color: var(--white-color);
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+
 
 
 /*---------------------------------------
@@ -1429,83 +1286,6 @@ background-image: url('../images/Tessellation%20shop%20banner_upscale.png');
   color: var(--white-color);
 }
 
-
-/*---------------------------------------
-  SITE FOOTER              
------------------------------------------*/
-.site-footer {
-  background-color: var(--primary-color);
-  padding-top: -35px;
-  padding-bottom: -12px;
-}
-
-.site-footer strong {
-  color: var(--white-color);
-}
-
-.site-footer p,
-.site-footer-link {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--btn-font-size);
-}
-
-.site-footer-link {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--btn-font-size);
-  transition: all 0.3s;
-}
-
-.site-footer-link:hover {
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: underline;
-}
-
-.copyright-text {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--menu-font-size);
-}
-
-.copyright-text a {
-	color: rgba(255, 200, 160, 0.75);
-}
-
-
-/*---------------------------------------
-  SOCIAL ICON               
------------------------------------------*/
-.social-icon {
-  margin: 0;
-  padding: 0;
-}
-
-.social-icon-item {
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.social-icon-link {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  display: block;
-  margin: 0 5px;
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.social-icon-link:hover {
-  background: var(--white-color);
-  color: var(--primary-color);
-}
-
-.social-icon-link span {
-  display: block;
-}
 
 
 /*---------------------------------------
